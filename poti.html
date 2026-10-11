@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портовое экспедирование — Gemi Cargo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: { 800: "#0B192C", 900: "#070F1E", 950: "#030712" },
+              ocean: { 500: "#0088CC", 600: "#0066A2", 700: "#004B7A" },
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              heading: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .glass-panel {
+        background: rgba(11, 25, 44, 0.85);
+        backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-navy-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between"
+  >
+    <header
+      class="glass-panel sticky top-0 z-50 px-4 py-4 border-b border-slate-800"
+    >
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-3">
+          <div
+            class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white text-xl font-black shadow-lg shadow-cyan-500/20"
+          >
+            <i class="fa-solid fa-ship"></i>
+          </div>
+          <span class="font-heading font-black text-xl text-white"
+            >GEMI<span class="text-cyan-400">CARGO</span></span
+          >
+        </a>
+        <a
+          href="index.html"
+          class="bg-slate-800 hover:bg-slate-700 text-slate-200 px-4 py-2 rounded-xl text-xs font-semibold transition flex items-center gap-2"
+        >
+          <i class="fa-solid fa-arrow-left"></i> На главную
+        </a>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-12 flex-grow">
+      <div
+        class="glass-panel p-6 sm:p-10 rounded-3xl border border-slate-700/80 space-y-6"
+      >
+        <div class="flex items-center gap-4">
+          <div
+            class="w-14 h-14 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl"
+          >
+            <i class="fa-solid fa-warehouse"></i>
+          </div>
+          <div>
+            <span
+              class="text-xs uppercase text-cyan-400 font-semibold tracking-widest"
+              >Направление услуг</span
+            >
+            <h1
+              class="font-heading font-extrabold text-2xl sm:text-3xl text-white mt-1"
+            >
+              Портовое экспедирование в Поти и Батуми
+            </h1>
+          </div>
+        </div>
+
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Внутрипортовое экспедирование — ключевое звено гарантированной
+          безопасной транзитной перевозки. Мы берем на себя все процессы в
+          портах Грузии.
+        </p>
+
+        <div class="space-y-4">
+          <h3 class="font-heading font-bold text-lg text-white">
+            В комплект портовых услуг входит:
+          </h3>
+          <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+            <li
+              class="flex items-start gap-3 bg-navy-900/60 p-3.5 rounded-xl border border-slate-800"
+            >
+              <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+              <span
+                >Оплата терминальных расходов (THC) и линейных портовых
+                сборов.</span
+              >
+            </li>
+            <li
+              class="flex items-start gap-3 bg-navy-900/60 p-3.5 rounded-xl border border-slate-800"
+            >
+              <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+              <span
+                >Оформление режима таможенного транзита (ВТТ / ТТ) для грузов из
+                третьих стран.</span
+              >
+            </li>
+            <li
+              class="flex items-start gap-3 bg-navy-900/60 p-3.5 rounded-xl border border-slate-800"
+            >
+              <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+              <span
+                >Сюрвейерский осмотр: фиксация сохранности пломб, взвешивание,
+                детальный фото/видеоотчет.</span
+              >
+            </li>
+            <li
+              class="flex items-start gap-3 bg-navy-900/60 p-3.5 rounded-xl border border-slate-800"
+            >
+              <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+              <span
+                >Перетарка и перегруз товаров на собственных терминалах в зоне
+                порта.</span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="bg-amber-500/10 border border-amber-500/30 p-4 rounded-2xl text-xs sm:text-sm text-slate-200"
+        >
+          <strong class="text-amber-400 block font-semibold mb-1"
+            >Оперативный контроль:</strong
+          >
+          Наши агенты на ежедневной основе находятся непосредственно на
+          терминалах в Поти и Батуми.
+        </div>
+
+        <div class="pt-4 flex flex-wrap gap-4">
+          <a
+            href="index.html#calculator"
+            class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-6 py-3 rounded-xl text-xs sm:text-sm transition shadow-lg shadow-cyan-500/20"
+          >
+            Рассчитать стоимость
+          </a>
+          <a
+            href="https://wa.me/995591272339?text=Здравствуйте,%20интересует%20экспедирование%20в%20Поти"
+            target="_blank"
+            class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-xl text-xs sm:text-sm transition flex items-center gap-2"
+          >
+            <i class="fab fa-whatsapp"></i> Написать в WhatsApp
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="bg-navy-900 border-t border-slate-800 text-slate-500 text-xs py-6 text-center"
+    >
+      <p>© 2026 Gemi Cargo (Геми Карго). Все права защищены.</p>
+    </footer>
+  </body>
+</html>
